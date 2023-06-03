@@ -14,6 +14,7 @@
 ####################################################################################
 import os
 import random
+import time
 
 WORD_INDEX = 0
 DEF_INDEX  = 1
@@ -95,9 +96,14 @@ def main():
         if ( is_answer_correct == ANSWER_CORRECT ):
             vocab_words_and_defs.remove_word()
             print( "Correct\n")
+            time.sleep( 1 )
+            clear()
         else:
             vocab_words_and_defs.send_word_to_back()
             print( "Incorrect. Correct answer is \""+word+"\"\n")
+            time.sleep( 1 )
+            input()
+            clear()
 
     print( "End of List" )
 
@@ -107,6 +113,15 @@ def main():
 ####################################################################################
 # Procedures                                                                       #
 ####################################################################################
+
+# Clear the terminal window
+def clear():
+    if ( os.name == 'nt' ):
+        clear_command = 'cls'
+    else:
+        clear_command = 'clear'
+    os.system( clear_command )
+## clear ##
 
 
 ####################################################################################

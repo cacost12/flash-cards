@@ -20,3 +20,5 @@ estimable:(adj) worthy of esteem, admirable; able to be estimated
 panegyric:elaborate praise; formal hymn of praise
 celerity:swiftness, rapidity of motion or action
 alacrity:brisk and cheerful readiness
+obstinate:stubbornly refusing to change one's opinion or chosen course of action, despite attempts to persuade one to do so.
+propitious:giving or indicating a good chance of success; favorable.
